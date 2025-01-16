@@ -8,6 +8,7 @@
 
 import GoogleMaps
 import Keys
+internal import LLMKitAWSBedrock
 import RollbarNotifier
 import UIKit
 import ICD10Kit
@@ -40,6 +41,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        AWSBedrockBot.register()
+
         let keys = TriageKeys()
 
         let rollbarConfig = RollbarConfig.mutableConfig(withAccessToken: keys.rollbarPostClientItemAccessToken)

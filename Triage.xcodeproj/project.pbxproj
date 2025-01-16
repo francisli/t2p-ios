@@ -98,6 +98,7 @@
 		45917FFF25512DDF002E03E7 /* BaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45917FFE25512DDF002E03E7 /* BaseTests.swift */; };
 		45966D122C71673D005F1762 /* NemsisNegativesKeyboardSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45966D112C71673D005F1762 /* NemsisNegativesKeyboardSource.swift */; };
 		45994122261BDE4D0062D141 /* InterstitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45994121261BDE4D0062D141 /* InterstitialViewController.swift */; };
+		459EF9A42D38203700C5AFC5 /* LLMKit in Frameworks */ = {isa = PBXBuildFile; productRef = 459EF9A32D38203700C5AFC5 /* LLMKit */; };
 		45A5AD902C66DB10007F63AE /* ActiveIncidentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A5AD8F2C66DB10007F63AE /* ActiveIncidentsViewController.swift */; };
 		45ACBDC8237E718600C99EBB /* AppCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACBDC7237E718600C99EBB /* AppCache.swift */; };
 		45B50C8A27D6D3CB002F1674 /* Report+RoutED.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B50C8927D6D3CB002F1674 /* Report+RoutED.swift */; };
@@ -358,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B845CFDAEE065F78D1056DB /* Pods_Triage.framework in Frameworks */,
+				459EF9A42D38203700C5AFC5 /* LLMKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -793,6 +795,9 @@
 				Base,
 			);
 			mainGroup = 4566F013236CCC5500A04C75;
+			packageReferences = (
+				459EF9A22D38203700C5AFC5 /* XCRemoteSwiftPackageReference "peak-ios-llmkit" */,
+			);
 			productRefGroup = 4566F01D236CCC5500A04C75 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1455,6 +1460,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		459EF9A22D38203700C5AFC5 /* XCRemoteSwiftPackageReference "peak-ios-llmkit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/peakresponse/peak-ios-llmkit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		459EF9A32D38203700C5AFC5 /* LLMKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 459EF9A22D38203700C5AFC5 /* XCRemoteSwiftPackageReference "peak-ios-llmkit" */;
+			productName = LLMKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4566F014236CCC5500A04C75 /* Project object */;
 }
